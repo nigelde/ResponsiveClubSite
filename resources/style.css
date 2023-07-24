@@ -324,7 +324,19 @@
     border-radius: 5px;
     height: 3rem;
     width: 7.5rem;
+    color: #8E1E1D;
     background-color: goldenrod;
+    box-shadow: 0px 5px;
+  }
+
+  .join:hover {
+    cursor: pointer;
+  }
+
+  .join:active {
+    margin-top: 5px;
+    color: black;
+    box-shadow: 0px 0px;
   }
 
   .sign {
@@ -338,6 +350,9 @@
 
 
   .footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
     height: 5rem;
     margin-left: 1rem;
     color: #8E1E1D;
@@ -345,9 +360,37 @@
 
 
   .copy {
-    margin-left: 1rem;
-    padding-top: 2rem;
+    margin-right: auto;
+    margin-left: 2rem;
+    
   }
+
+  .footer-nav {
+    margin-right: 2rem;
+  }
+
+  .footer-nav a {
+    padding: 2rem;
+    color: #8E1E1D
+  }
+
+  @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer nav i:hover {
+  animation: bounceIn 2s 2;
+}
 
   
 
@@ -525,7 +568,7 @@
       width: 100%;
       margin-left: 2%;
       margin-right: 2%;
-      border: 1px solid black;
+    
     }
 
     .table {
@@ -576,5 +619,11 @@
 
   #welcome-heading {
     display: none;
+  }
+ }
+
+ @media (min-width: 1300px) {
+  .banner-img {
+    flex: 1;
   }
  }
