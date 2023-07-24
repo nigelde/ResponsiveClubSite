@@ -11,7 +11,7 @@
 
   <header class="header">
     <img class="logo" src="https://images.unsplash.com/photo-1675855547526-c24d4b60d268?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJhZ29uJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" style="height: 3rem; width: 4rem;">
-    <h1 class="header-name"><span class="header-name">Blaina</span>SC</h1>
+    <h2 class="header-name"><span class="header-name">Blaina</span>SC</h2>
     <nav class="nav-bar">
       <ul class="nav-items">
         <li class="nav-item"><a href="#">About</a></li>
@@ -20,26 +20,37 @@
         <li class="nav-item"><a href="#">Contact</a></li>
       </ul>
       <div class="nav-bar-mobile">
-        <a class="mobile-link"><i class="fa-solid fa-info"></i></a>
-        <a class="mobile-link"><i class="fa-solid fa-list"></i></a>
-        <a class="mobile-link"><i class="fa-solid fa-trophy"></i></a>
-        <a class="mobile-link"><i class="fa-solid fa-phone"></i></a>  
+        <a class="mobile-link" title="About Us"><i class="fa-solid fa-info"></i></a>
+        <a class="mobile-link" title="Upcoming Fixtures"><i class="fa-solid fa-list"></i></a>
+        <a class="mobile-link" title="Club Honours"><i class="fa-solid fa-trophy"></i></a>
+        <a class="mobile-link" title="Contact Us"><i class="fa-solid fa-phone"></i></a>  
       </div>  
     </nav>
   </header>
 
   <main>
+
+    <section class="welcome">
+      <div>
+        <h1 id="welcome-heading">Welcome to <span>Blaina</span> Sports Club</h1>
+        <h1 id="welcome-heading-mob"><span>Blaina</span>SC</h1>
+      </div>
+    </section>
+
+    <h2 class="news">Latest News</h2>
+
     <section class="main-banner">
-      <article class="banner-img">
-        <img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+      <article class="banner-img-container">
+        <img class="banner-img" src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
         <h2 class="banner-heading">Cricket</h2>
         <p class="banner-caption"><em>Gary Norman on his way to 74no</em></p>
         <div class="banner-article">
-          <p><strong>Last week's match</strong> saw the 1st XI come up against Brynmawr CC in a top of the table clash at Blaina. Brynmawr won the toss and chose to bat first on a beautiful afternoon with conditions perfect for batting. After a solid start, in which the openers put on 66 for the first wicket, Geraint Edwards came on to bowl his tidy off-spin. This proved to be a masterstroke from skipper Luke Jones, as the pitch helped no end with Edwards ripping through the Brynmawr top order, finishing with figures of 6-32. Brynmawr closed their innings on 203 all out, opener Tim Griffiths top scoring with 67. In reply, Blaina got off to a terrible start, both openers out with the score on 17. Bobby Reynolds and wily old pro Gary Norman set about repairing the damage, and, after a period of rebuilding, started making inroads into Brynmawr's score. Reynolds went for 58 with the total on 162-3, but new signing Bryn Harvey saw us home with Norman, who ended on 74 not out. Blaina won by 7 wickets and go top of the league!</p>
+          <p><strong>Last week's match</strong> saw the 1st XI come up against Brynmawr CC in a Division 2 top of the table clash at Blaina. Brynmawr won the toss and chose to bat first on a beautiful afternoon with conditions perfect for batting. After a solid start, in which the openers put on 66 for the first wicket, Geraint Edwards came on to bowl his tidy off-spin. This proved to be a masterstroke from skipper Luke Jones, as the pitch helped no end with Edwards ripping through the Brynmawr top order, finishing with figures of 6-32. Brynmawr closed their innings on 203 all out, opener Tim Griffiths top scoring with 67. In reply, Blaina got off to a terrible start, both openers out with the score on 17. Bobby Reynolds and wily old pro Gary Norman set about repairing the damage, and, after a period of rebuilding, started making inroads into Brynmawr's score. Reynolds went for 58 with the total on 162-3, but new signing Bryn Harvey saw us home with Norman, who ended on 74 not out. Blaina won by 7 wickets and go top of the league!</p>
         </div>
       </article>
       <article class="table-section">
-        <table class="table" cellspacing=0>
+        <h6 class="table-heading">Division 2 Table</h6>
+        <table class="table table-responsive" cellspacing=0>
           <thead class="thead">
             <tr>
               <th scope="col" class="team">Team</th>
@@ -49,7 +60,7 @@
           </thead>
           <tbody>
             <tr class="odd">
-              <td class="team"><strong>Blaina</strong></td>
+              <td class="team">Blaina</td>
               <td>10</td>
               <td>176</td>
             </tr>
@@ -111,13 +122,69 @@
           </tbody>
         </table>
         <div class="banner-sub-img">
-          <p class="banner-sub-info"><em>Geraint Edwards takes 6-32</em></p>
+          <p class="banner-sub-info">Edwards takes 6-32</p>
         </div>
       </article>
     </section>
 
-    <section>
-      
+    <h2 class="news">Future Events...</h2>
+
+    <section class="future-events">
+      <div class="events">
+        <h6 class="month">July</h6>
+        <p class="date">1st.....2nd XI v Brecon</p>
+        <p class="date">6th.....Quiz Night</p>
+        <p class="date">8th.....1st XI v Nantyglo</p>
+        <p class="date">12th.....Open Darts Comp.</p>
+        <p class="date">15th.....2nd XI v Crickhowell</p>
+        <p class="date">20th.....Quiz Night</p>
+        <p class="date">22nd.....1st XI v Pontypool</p>
+        <p class="date">26th.....Open Pool Comp.</p>
+        <p class="date">29th.....2nd XI v Brynmawr</p>
+      </div>
+      <div class="venue">
+        <div>
+          <div class="venue-heading">
+            <img class="popper" id="popper" src="https://tse1.mm.bing.net/th?id=OIP.UU5pZttsfXlzSaSMUlrPnwHaHa&pid=Api&rs=1&c=1&qlt=95&w=113&h=113">
+            <h6 class="venue-hire">Venue Hire</h6>
+            <img class="popper" src="https://tse1.mm.bing.net/th?id=OIP.UU5pZttsfXlzSaSMUlrPnwHaHa&pid=Api&rs=1&c=1&qlt=95&w=113&h=113"> 
+          </div>  
+        </div>
+        <div>
+          <div class="venue-img-box">
+            <img class="venue-img" src="https://images.unsplash.com/photo-1480455454781-1af590be2a58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b2NjYXNpb24lMjB2ZW51ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <p><em>Call us on 01495 998776 to arrange your special occasion</em></p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section>
+      <div class="recruiting">
+        <h5 class="news" id="calling">Calling all Players!</h5>
+        <p class="join-us">We are actively seeking new recruits of all ages for all our teams! So, if you are interested in football, cricket, rugby, pool or darts, come along and see us.</p>     
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <h5 class="news" id="keep">Keep up to Date...</h5>
+      </div>
+      <div class="form">
+        <form action="example.html" method="POST">
+          <input type="text" name="first-text-field" value="enter email" class="email">
+        </form>
+        <form>
+          <input type="submit" value="Join" class="join"></input>
+        </form>
+      </div>
+      <div class="sign">
+        <h5 class="news" id="sign">...Sign up to our Newsletter!</h5>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copy">&copy Blaina SC 2023</p>
+    </footer>
   </main>
 </html>

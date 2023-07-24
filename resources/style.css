@@ -62,16 +62,49 @@
     padding: 0.5rem;
     text-decoration: none;
   }
+
+  .welcome {
+    height: 30rem;
+    width: 100%;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1563184956-7a02a2852738?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3JpY2tldCUyMGdyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #welcome-heading {
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    color: white;
+  }
+
+  #welcome-heading span {
+    color: #8E1E1D;
+    font-size: 4rem;
+  }
+
+  #welcome-heading-mob {
+    display: none;
+  }
+
+  .news {
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    color: #8E1E1D;
+  }
   
   .main-banner {
     display: flex;
     width: 100%;
-    margin-left: 1rem;
-    padding-bottom: 4rem;
     padding-top: 2rem;
   }
   
-  .banner-img {
+  .banner-img-container {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -103,15 +136,19 @@
     margin-left: 4rem;
     text-align: center;
   }
+
+  .table-heading {
+    text-align: left;
+    padding-bottom: 0.2rem;
+  }
   
   table {
-    width: 80%;
-    height: 30rem;
+    width: 90%;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    box-shadow: 5px 5px #888888;
+    box-shadow: 1px 1px 3px 3px rgba(20, 20, 20, 0.4);
   }
   
   .odd {
@@ -138,13 +175,14 @@
   }
   
   .banner-sub-img {
-    height: 15rem;
-    width: 80%;
+    width: 90%;
+    height: 18rem;
+    margin-top: 2rem;
     background-image: url("https://images.unsplash.com/photo-1599982973590-2de8279c6114?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNyaWNrZXQlMjBib3dsZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    margin-top: 2rem;
+    overflow: hidden;
   }
   
   .banner-sub-info {
@@ -152,12 +190,181 @@
     position: absolute;
     padding-left: 0.5rem;
     padding-top: 0.3rem;
+    font-style: italic;
+  }
+
+  .future-events {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .events {
+    width: 45%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border: 1px double #8E1E1D;
+    border-radius: 10%;
+  }
+
+  .month {
+    padding: 2rem;
+    color: #8E1E1D;
+    font-family:fantasy;
+    font-size: 1.5rem;
+  }
+
+  .date {
+    padding: 0.5rem;
+  }
+
+  .venue {
+    width: 45%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    border: 1px double #8E1E1D;
+    border-radius: 10%;
+  }
+
+  .venue-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 6rem;
+  }
+
+  .popper {
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    bottom: 1rem;
+  }
+
+  .venue-hire {
+    font-family: fantasy;
+    font-size: 1.5rem;
+    color: #8E1E1D;
+    margin: 0 2rem;
+  }
+
+  #popper {
+    transform: scaleX(-1);
+  }
+
+  .venue-img-box {
+    align-items: flex-start;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    text-align: center;
+  }
+
+  .venue-img {
+    width: 100%;
+    border-radius: 50%;
+    
+  }
+
+  .recruiting {
+    margin: 2rem 0 2rem 1rem;
+    border: 1px solid #8E1E1D;
+    border-radius: 5px;
+    background-image: url("https://images.unsplash.com/photo-1487466365202-1afdb86c764e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  #calling {color: white;}
+
+  .join-us {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: white;
+  }
+
+  .newsletter {
+    margin-left: 1rem;
+    background-color: #8E1E1D;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+  }
+
+  #keep {
+    color: white;
+  }
+
+  .form {
+    display: flex;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .email {
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 3rem;
+    width: 25rem;
+    margin-right: 1rem;
+  }
+
+  .join {
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 3rem;
+    width: 7.5rem;
+    background-color: goldenrod;
+  }
+
+  .sign {
+    text-align: right;
+    margin-right: 1rem;
   }
   
-  @media only screen and (min-width: 280px) and (max-width: 480px) {
+  #sign {
+    color: white;
+  }
+
+
+  .footer {
+    height: 5rem;
+    margin-left: 1rem;
+    color: #8E1E1D;
+  }
+
+
+  .copy {
+    margin-left: 1rem;
+    padding-top: 2rem;
+  }
+
+  
+
+  
+  
+  @media (min-width: 250px) and (max-width: 540px) {
+
+    
+
+    .header {
+      width: 90%;
+      border-bottom: none;
+    }
 
     .logo {
         margin-right: auto;
+        margin-left: 10%;
     }
     .nav-items {
       display: none;
@@ -166,59 +373,208 @@
     .nav-bar-mobile {
       display: flex;
     }
+
+    .welcome {
+      width: 100%;
+      margin: 0;
+    }
+
+    #welcome-heading {
+      display: none;
+    }
+
+    #welcome-heading-mob {
+      display: block;
+      color: black;
+      font-size: 2rem;
+      position: relative;
+      top: 3rem;
+    }
+
+    #welcome-heading-mob span {
+      color: #8E1E1D;
+      font-size: 2rem;
+
+    }
     
-  
     .header-name {
       display: none;
     }
+
+    .news {
+      font-size: 2rem;
+    }
   
     .main-banner {
-      display: block;
-      width: 90%;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
 
     .banner-heading {
         font-size: 1.5rem;
     }
-  
+
+    .banner-img-container {
+      width: 100%;
+    }
+
     .banner-img {
       width: 100%;
+      margin: 0;
+    }
+
+    .banner-article {
+      width: 80%;
+      text-align: justify;
+      margin-left: 10%;
     }
   
     .table-section {
-      display: block;
-      width: 90%;
-      margin: 3rem 2rem;
-    
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      width: 80%;
+      margin-left: 10%;
+      
     }
   
     .table {
-      display: block;
-      width: 90%;
-      height: auto;
+      min-width: 100%;
+      
     }
   
     .banner-sub-img {
-      display: block;
-      width: 90%;
+      display: flex;
+      min-width: 100%;
       text-align: left;
+      
     }
 
-    .banner-sub-info {
-        font-size: 0.2rem;
+    .future-events {
+      flex-direction: column;
+      width: 100%;
+  
+    }
+
+    .events {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      
+    }
+
+    .venue {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .venue-heading {
+      text-align: center;
+    }
+
+    .venue-hire {
+      position: relative;
+      bottom: 1rem;
+    }
+
+    .recruiting {
+      width: 100%;
+      margin: 0;
+      border-radius: 0%;
+    }
+
+    .newsletter {
+      width: 100%;
+      margin: 0;
+      border-radius: 0%;
+    }
+
+    #keep {
+      margin-left: -0.5rem;
+    }
+
+    .form {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .email {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+
+    .join {
+      position: relative;
+      right: 0.5rem;
+    }
+
+    #sign {
+      margin-right: 1rem;
     }
 
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 541px) and (max-width: 760px) {
+
+    .table-section {
+      width: 100%;
+      margin-left: 2%;
+      margin-right: 2%;
+      border: 1px solid black;
+    }
+
+    .table {
+      min-width: 100%;
+    }
+
+    .table td, th {
+      font-size: 0.8rem;
+    }
+
+    .banner-sub-img {
+      width: 100%;
+      flex: 1;
+    }
+
+    .banner-sub-info {
+      max-width: 60%;
+    }
+
+    .form {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .email {
+       width: 100%;
+       margin-bottom: 1rem;
+    }
+  }
+
+  @media only screen and (min-width: 540px) and (max-width: 1300px) {
+
+    .banner-img {
+      flex: 1;
+      border: 1px solid black;
+    }
 
     .banner-sub-img {
         text-align: left;
     }
 
     .banner-sub-info {
-        font-size: 8px;
+        font-size: 0.75rem;
     }
-    
+ }
+
+ @media (min-width: 540px) and (max-width: 1200px) {
+
+  #welcome-heading {
+    display: none;
   }
+ }
